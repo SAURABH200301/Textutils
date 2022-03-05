@@ -1,5 +1,5 @@
+import React,{useState} from 'react';
 import About from './components/About';
-import { useState } from 'react/cjs/react.development';
 import Alert from './components/Alert';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';

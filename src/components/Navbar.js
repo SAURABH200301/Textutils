@@ -21,9 +21,10 @@ export default function Navbar(props) {
               </li>
 
             </ul>
-          <div>
-            {/* <div className='d-block'> */}
-               <div onClick={()=>{props.setModee('primary')}} className="bg-primary rounded m-1" style={{height:'30px', width:'30px'}}></div>
+          {/* <div>
+            
+            <div onClick={()=>{props.setModee('primary')}} className="bg-primary rounded m-1" style={{height:'30px', width:'30px'}}>
+              </div>
             </div>
             <div>
                <div onClick={()=>{props.setModee('secondary')}} className="bg-secondary rounded m-1" style={{height:'30px', width:'30px'}}></div>
@@ -33,8 +34,8 @@ export default function Navbar(props) {
             </div>
             <div>
                <div onClick={()=>{props.setModee('warning')}} className="bg-warning rounded m-1" style={{height:'30px', width:'30px'}}></div>
-            </div>
-          {/* </div> */}
+            </div> */}
+         
             <div className="form-check form-switch text-light">
               <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"  onClick={()=>{props.setModee(null)}} />
                 <label className={`form-check-label text-${props.mode === 'light'?'black':'white'} `} htmlFor="flexSwitchCheckChecked" >Enable {props.mode==='light'?'Dark':'light'} Mode</label>
